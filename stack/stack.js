@@ -29,9 +29,9 @@ class Stack {
     print() {
         var stringToPrint = ''
         let curr = this.top;
-        stringToPrint += `${curr.data} -> `
+        stringToPrint += `${curr.data} <- `
         while (curr.previous.previous) {
-            stringToPrint += `${curr.previous.data} -> `;
+            stringToPrint += `${curr.previous.data} <- `;
             curr = curr.previous;
         }
         stringToPrint += `${curr.previous.data}`;

@@ -32,9 +32,9 @@ class Queue {
     print() {
         var stringToPrint = ''
         let curr = this.first;
-        stringToPrint += `${curr.data} <- `
+        stringToPrint += `${curr.data} -> `
         while (curr.next.next) {
-            stringToPrint += `${curr.next.data} <- `;
+            stringToPrint += `${curr.next.data} -> `;
             curr = curr.next;
         }
         stringToPrint += `${curr.next.data}`;

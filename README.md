@@ -34,10 +34,20 @@
 ```
 
 ### Stack Methods
-- push() - creates a new node and adds to the top of the stack
-- pop()
+#### push()
+- create a new node
+- point the new node's previous pointer to the old top
+- make the new node the new top 
+
+#### pop()
+- make the old top a temp node 
+- make the new top the old top's previus node 
+- return the temp (the old top)
 
 ### Queue Methods 
+#### enqueue()
+
+#### dequeue()
 - enqueue() - creates a new node and adds to the first of the queue
 - dequeue() - 
 
