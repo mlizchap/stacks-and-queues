@@ -51,3 +51,6 @@
 - enqueue() - creates a new node and adds to the first of the queue
 - dequeue() - 
 
+
+## Example Problems
+- [Min Stack](https://leetcode.com/problems/min-stack)
