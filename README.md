@@ -30,7 +30,7 @@
 ```
 - nodes for **queues** only care about the **next node** because the **first** node will be removed and the next node will become the first node. 
 ```javascript
-/* 8 <- 1 <- 9 */
+/* 8 -> 1 -> 9 */
 ```
 
 ### Stack Methods
@@ -46,10 +46,17 @@
 
 ### Queue Methods 
 #### enqueue()
+- create a new node
+- if there is no first node - assign the newly created node to `this.first`
+- if there is a first node - assign current to the first node and iterate through the node, changing `current` to `current.next` and once there is no `current.next` assign the new node to it.
+- increase the size;
+- return the node.
 
 #### dequeue()
-- enqueue() - creates a new node and adds to the first of the queue
-- dequeue() - 
+- assign `temp` to the first node.
+- make the old `first` node the `first.next` node.
+- decrease the size;
+- return the `temp` node (the first node being removed)
 
 
 ## Example Problems
